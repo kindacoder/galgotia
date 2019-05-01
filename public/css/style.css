@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
+
+body {
+	margin: 40px;
+	/*background: rgb(204, 204, 204);*/
+	background:#443b63;
+	font-family: 'Noto Sans';
+	font-size:10pt;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin:0;
+	display: inline-block;
+	font-weight:normal;
+}
+
+div,p,span,h1,h2,h3,h4,h5,h6 { color: #625b7c; }
+
+h1, h2 { font-size:24pt; letter-spacing:-.38px; }
+
+.page {
+  background: white;
+  display: block;
+  margin: 1in auto;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+
+.margin {
+		width:10in;
+		height: 7.2in;
+		border:2px solid red;
+		position: relative;
+		top:.5in;
+		left:.5in;
+	border: 2px solid #625b7c;
+  border-radius: 0.09in;
+	padding:3px;
+}
+.container {
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 7.2in 2.8in;
+	background-color: #fff;
+	color: #444;
+	min-height:7.2in;
+}
+
+.a {
+	grid-column: 1 / 2;
+	grid-row: 1;
+}
+.b {
+	grid-column: 2;
+	grid-row: 1;
+	/*background:cyan;*/
+}
+
+.certificate-data {
+	display: grid;
+	grid-gap: 0;
+	grid-template-columns: 50% 50%;
+	position:absolute;
+	width:2.8in;
+	bottom:3px;
+	/*background-color:yellow;*/
+}
+
+.cert-to, .cert-name, .cert-p,
+.cert-type, .cert-image, .cert-url,
+.cert-legal {
+	position:relative;
+	padding-left:26pt;
+	padding-right:26pt;
+}
+
+.cert-to 				{ height:44pt; margin-bottom:20pt; }
+.cert-to h3 		{ position:absolute; bottom:0; }
+.cert-name 			{ height:82pt; }
+.cert-name h1		{ font-weight:bold; }
+.cert-p .w230 	{ min-height:40pt; }
+.cert-type			{ min-height:50pt; margin-bottom:30pt; }
+.cert-type h2 	{ font-weight:normal; }
+.cert-image img	{ max-width:100%; }
+.cert-url				{ font-size:7pt; }
+.cert-legal .legal-copy { margin-top:.25in;  }
+
+.cert-logo			{ width:130pt; height:130pt;
+									padding-top:20pt; padding-bottom:50pt; }
+.cert-logo p 		{ line-height:1; }
+.cert-slogan		{ font-size:7pt; font-weight:bold; line-height:1.2;}
+.cert-logo .cert-slogan { display:inline-block; width:80%; }
+
+.cert-signature { font-size:7pt; padding-bottom:15pt; }
+.cert-signature p { border-top: 2px solid #ddd; width:60%; padding-top:1em; /*top:-10pt; position:relative;*/ }
+.cert-signature img { max-width:160pt; height:auto; }
+.cert-signature .position { color: #7a7a7a; }
+
+.certificate-dates .label { font-size:8pt; color:#7a7a7a;}
+.certificate-dates .date { font-weight:bold; }
+
+.cert-qr img { width: 80pt; height:80pt; }
+/*
+Utilities
+*/
+
+.w230 				{ width: 230pt; }
+.legal-copy 	{ font-size:6pt; }
+.align-center * { text-align:center; margin: 0 auto; }
+
+
+
+div.page[size="A4"] {
+  width: 8.2in;
+  height: 11in;
+}
+
+div.page[size="A4"][layout="portrait"] {
+  width: 11in;
+  height: 8.2in;
+}
+
+@page {
+  size: A4 portrait;
+  /*margin: .5in;*/
+}
